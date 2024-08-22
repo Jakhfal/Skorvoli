@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard Volly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scoreboard">
+        <h1>Volly</h1>
+        <div class="teams">
+            <div class="team" id="teamA">
+                <h2>Karasuno</h2>
+                <p class="score" id="scoreA">0</p>
+                <div class="controls">
+                    <button onclick="trueScore('A')">Tambah Poin</button>
+                    <button onclick="falseScore('A')">Kurangi Poin</button>
+                    
+                </div>
+            </div>
+
+<div class="set-tracker">
+  <h2>Set Tracker</h2>
+  <ul>
+    <li>Set 1: <span id="set1" class="set-score">0 - 0</span></li>
+    <li>Set 2: <span id="set2" class="set-score">0 - 0</span></li>
+    <li>Set 3: <span id="set3" class="set-score">0 - 0</span></li>
+  </ul>
+</div>
+
+            <div class="team" id="teamB">
+                <h2>Inarizaki</h2>
+                <p class="score" id="scoreB">0</p>
+                <div class="controls">
+                    <button onclick="trueScore('B')">Tambah Poin</button>
+                    <button onclick="falseScore('B')">Kurangi Poin</button>
+                    
+                    
+                </div>
+            </div>
+
+        </div>
+        <button class="reset" onclick="resetScore()">Reset Skor</button>
+        
+        <div id="winner" class="winner"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
